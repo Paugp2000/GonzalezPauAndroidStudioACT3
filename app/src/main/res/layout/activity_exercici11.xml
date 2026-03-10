@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exercici11">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- Toggle per activar/desactivar les línies de scroll -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amagar línies de scroll:"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/switchScroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:checked="true" />
+        </LinearLayout>
+
+        <!-- ScrollView Horitzontal -->
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#E0E0E0"
+            android:padding="10dp">
+
+            <!-- LinearLayout horitzontal per contenir els botons -->
+            <LinearLayout
+                android:id="@+id/buttonsContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- 7 Botons -->
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_marginEnd="5dp"/>
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:layout_marginEnd="5dp"/>
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:layout_marginEnd="5dp"/>
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:layout_marginEnd="5dp"/>
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:layout_marginEnd="5dp"/>
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:layout_marginEnd="5dp"/>
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:layout_marginEnd="5dp"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
