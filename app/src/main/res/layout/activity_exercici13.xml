@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exercici13">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View android:id="@+id/layout1" android:layout_width="100dp" android:layout_height="100dp"  android:layout_alignParentRight="true" android:background="#FF0000" />
+        <View android:id="@+id/layout2" android:layout_width="200dp" android:layout_height="100dp" android:layout_toLeftOf="@+id/layout1" android:background="#00FF00" />
+        <View android:id="@+id/layout3" android:layout_width="420dp" android:layout_height="320dp" android:layout_below="@id/layout2" android:background="@color/purple_500"/>
+        <View android:id="@+id/layout4" android:layout_width="160dp" android:layout_alignParentBottom="true" android:layout_height="300dp" android:layout_below="@id/layout3" android:background="@color/teal_700"/>
+        <View android:layout_width="wrap_content" android:layout_height="300dp" android:layout_alignParentBottom="true" android:layout_alignTop="@id/layout4" android:layout_toRightOf="@id/layout4" android:background="#FF00FF"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
